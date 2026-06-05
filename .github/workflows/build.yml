@@ -22,8 +22,8 @@ jobs:
       - name: Build Game
         run: npm run build
 
-      - name: Upload Artifact
+      - name: Upload Build Artifact
         uses: actions/upload-artifact@v4
         with:
           name: game-build
-          path: .
+          path: docs
