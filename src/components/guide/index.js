@@ -6,7 +6,7 @@ export default class Guide extends React.Component {
     this.state = {};
   }
   render() {
-    return ();
+    return null;
   }
 }
 
