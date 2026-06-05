@@ -11,13 +11,6 @@ export default class Guide extends React.Component {
       isMobile: isMobile(),
     };
   }
-  
-  shouldComponentUpdate(state) {
-    if (state.QRCode === this.state.QRCode) {
-      return false;
-    }
-    return true;
-  }
   render() {
     if (this.state.isMobile) {
       return (
@@ -25,7 +18,7 @@ export default class Guide extends React.Component {
       );
     }
     return (
-      <div style={{ display: this.state.isMobile ? 'none' : 'block' }}>
+      <div style={{ display: 'none'}}>
       
       </div>
     );
